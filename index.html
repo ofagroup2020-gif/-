@@ -1,121 +1,185 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>ドライバー募集 | 総合軽貨物グループ</title>
+  <title>井上運送｜軽貨物ドライバー求人・配送・引越し｜OFAフランチャイズ加盟店（鹿児島）</title>
+  <meta name="description" content="井上運送（OFAフランチャイズ加盟店）｜鹿児島県内：軽貨物ドライバー求人／配送／単身・小規模引越し。LINEで無料相談。単価150〜180円、日額2万円など案件によりご案内。" />
+  <meta name="theme-color" content="#ffffff" />
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
-<style>
-body{
-  margin:0;
-  font-family:"Noto Sans JP",sans-serif;
-  background:#000;
-  color:#fff;
-}
+  <style>
+    /* ===== Reset ===== */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    a { color: inherit; text-decoration: none; }
 
-/* ===== HEADER（元そのまま） ===== */
-header{
-  background:#fff;
-  padding:18px 12px 10px;
-  text-align:center;
-}
-.logo{
-  font-size:26px;
-  font-weight:900;
-  color:#0F2A44;
-  margin-bottom:12px;
-}
-.header-btn{
-  display:block;
-  max-width:720px;
-  margin:0 auto;
-  background:#FFC400;
-  color:#1a1a1a;
-  font-weight:900;
-  padding:16px;
-  border-radius:999px;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-}
+    /* ===== Header (元の構造：ロゴ→黄色ボタンのみ) ===== */
+    header{
+      background:#fff;
+      padding: 22px 16px 14px;
+      text-align:center;
+    }
+    .logo{
+      font-size: 28px;
+      font-weight: 900;
+      color: #12304b;
+      margin: 0;
+      line-height: 1.15;
+      letter-spacing: .02em;
+    }
+    /* ※元っぽさ優先：説明は小さく1行で（邪魔ならこの行ごと消してOK） */
+    .subline{
+      margin: 6px auto 0;
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(18,48,75,.78);
+      max-width: 680px;
+      line-height: 1.35;
+    }
 
-/* ===== HERO（元の肝） ===== */
-.hero{
-  position:relative;
-  background:url("hero.jpg") center/cover no-repeat;
-  min-height:calc(100vh - 130px);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.55);
-}
-.hero-inner{
-  position:relative;
-  z-index:2;
-  padding:0 16px;
-}
-.hero-sub{
-  display:inline-block;
-  background:rgba(0,0,0,.45);
-  padding:8px 16px;
-  border-radius:20px;
-  font-size:14px;
-  margin-bottom:18px;
-}
-.hero h1{
-  font-size:38px;
-  font-weight:900;
-  line-height:1.25;
-  margin:0 0 14px;
-}
-.hero p{
-  font-size:16px;
-  margin-bottom:26px;
-}
-.hero-btn{
-  display:block;
-  max-width:720px;
-  margin:0 auto;
-  background:#FFC400;
-  color:#1a1a1a;
-  font-weight:900;
-  padding:18px;
-  border-radius:999px;
-  box-shadow:0 10px 26px rgba(0,0,0,.35);
-}
-.hero-btn span{
-  display:block;
-  font-size:13px;
-  margin-bottom:4px;
-}
-</style>
+    .header-btn{
+      display:block;
+      max-width: 720px;
+      margin: 14px auto 0;
+      padding: 18px 16px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 16px;
+      letter-spacing: .02em;
+      color:#1b1b1b;
+      background: linear-gradient(180deg,#FFD95A 0%, #FFC400 55%, #F2B400 100%);
+      box-shadow: 0 10px 22px rgba(0,0,0,.25);
+      border: 1px solid rgba(0,0,0,.10);
+    }
+
+    /* ===== Hero (元の見た目：写真＋暗幕＋帯＋文字＋黄色ボタン) ===== */
+    .hero{
+      position: relative;
+      /* ★必須：index.html と同じ階層に hero.jpg を置く */
+      background: url("./hero.jpg") center/cover no-repeat;
+      min-height: calc(100vh - 140px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding: 26px 16px 30px;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: rgba(0,0,0,.56); /* 元に近い暗幕 */
+    }
+    .hero-inner{
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 820px;
+    }
+
+    /* 元の「黒い帯（角丸少なめ）」 */
+    .hero-sub{
+      display:inline-block;
+      background: rgba(0,0,0,.40);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 12px 18px;
+      border-radius: 10px;          /* ←丸すぎない */
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: .02em;
+    }
+
+    .hero h1{
+      margin: 0 0 16px;
+      font-size: 42px;              /* 元サイズ寄せ */
+      font-weight: 900;
+      line-height: 1.20;
+      text-shadow: 0 12px 30px rgba(0,0,0,.35);
+    }
+    .hero p{
+      margin: 0 0 26px;
+      font-size: 16px;
+      font-weight: 700;
+      color: rgba(255,255,255,.88);
+      line-height: 1.85;
+    }
+
+    .hero-btn{
+      display:block;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 18px 16px;
+      border-radius: 999px;
+      color:#1b1b1b;
+      background: linear-gradient(180deg,#FFD95A 0%, #FFC400 55%, #F2B400 100%);
+      box-shadow: 0 12px 26px rgba(0,0,0,.35);
+      border: 1px solid rgba(0,0,0,.12);
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+    .hero-btn .small{
+      display:block;
+      font-size: 13px;
+      margin-bottom: 6px;
+      font-weight: 900;
+      opacity: .85;
+    }
+    .hero-btn .big{
+      display:block;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 520px){
+      .logo{ font-size: 26px; }
+      .subline{ font-size: 12px; }
+      .hero h1{ font-size: 38px; }
+      .hero-sub{ font-size: 14px; }
+      .hero-btn .big{ font-size: 19px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">SKG (Sample)</div>
-  <a href="#cta" class="header-btn">LINEで問い合わせる</a>
-</header>
+  <header>
+    <h1 class="logo">井上運送</h1>
+    <div class="subline">OFAフランチャイズ加盟店｜軽貨物ドライバー求人／配送／引越し</div>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-sub">未経験OK・加盟金0円・車両リースあり</div>
-    <h1>会社に縛られず、<br>自分の力で稼ぐ。</h1>
-    <p>普通免許1枚で、月収60万円〜を目指せる<br>プロドライバー募集</p>
-    <a href="#cta" class="hero-btn">
-      <span>最短3日で稼働開始！</span>
-      今すぐ案件情報を見る（無料）
+    <a class="header-btn" href="https://lin.ee/TBt7RG4" target="_blank" rel="noopener">
+      LINEで問い合わせる
     </a>
-  </div>
-</section>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-sub">鹿児島県内対応・未経験OK・相談だけOK</div>
+
+      <h1>会社に縛られず、<br>自分の力で稼ぐ。</h1>
+
+      <p>
+        井上運送はOFAフランチャイズ加盟店として、案件供給と現場フォローを両立。<br>
+        初めての方も経験者も、働き方に合わせて案件をご提案します。
+      </p>
+
+      <a class="hero-btn" href="https://lin.ee/TBt7RG4" target="_blank" rel="noopener">
+        <span class="small">最短3日で稼働開始！</span>
+        <span class="big">今すぐ案件情報を見る（無料）</span>
+      </a>
+    </div>
+  </section>
 
 </body>
 </html>
