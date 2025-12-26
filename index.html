@@ -1,351 +1,572 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>井上運送｜軽貨物ドライバー求人・配送・引越し｜OFAフランチャイズ加盟店（鹿児島）</title>
+  <meta name="description" content="【鹿児島県内】井上運送（OFAフランチャイズ加盟店）軽貨物ドライバー求人。未経験OK。単価150〜180円、日額2万円など案件多数。単身／小規模引越し、軽貨物配送のご依頼もLINEで相談無料。" />
+  <meta name="theme-color" content="#0b1220" />
 
-<title>軽貨物ドライバー募集｜総合軽貨物グループ</title>
-<meta name="description" content="未経験OK・加盟金0円・車両リースあり。普通免許1枚で月収60万円以上を目指せる軽貨物ドライバー募集。LINEで無料相談。">
+  <!-- OGP -->
+  <meta property="og:title" content="井上運送｜軽貨物ドライバー求人・配送・引越し（鹿児島）" />
+  <meta property="og:description" content="未経験OK。単価150〜180円／日額2万円など。単身・小規模引越し／配送依頼も受付。LINEで無料相談。" />
+  <meta property="og:type" content="website" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
-<style>
-/* ===============================
-   BASE
-================================ */
-:root{
-  --navy:#0F1E3A;
-  --yellow:#FFC400;
-  --yellow2:#FFD95A;
-  --line:#06C755;
-}
-*{box-sizing:border-box;}
-body{
-  margin:0;
-  font-family:"Noto Sans JP",sans-serif;
-  background:#000;
-  color:#fff;
-  line-height:1.7;
-}
-a{text-decoration:none;color:inherit;}
-.container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 20px;
-}
-.text-center{text-align:center;}
+  <style>
+    :root{
+      --bg:#0b1220;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.82);
+      --muted2:rgba(255,255,255,.65);
+      --card:#ffffff;
+      --cardText:#0b1220;
+      --yellow:#FFC400;
+      --yellow2:#FFD95A;
+      --line1:#10D86A;
+      --line2:#06C755;
+      --shadow:0 18px 42px rgba(0,0,0,.38);
+      --shadowSoft:0 14px 30px rgba(0,0,0,.28);
+      --radius:22px;
+      --radius2:30px;
+      --max:980px;
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:"Noto Sans JP",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    a{ color:inherit; text-decoration:none; }
+    .container{
+      width:100%;
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px;
+    }
 
-/* ===============================
-   HEADER
-================================ */
-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:100;
-  background:rgba(0,0,0,.65);
-  backdrop-filter:blur(8px);
-}
-.header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:12px 0;
-}
-.logo{
-  font-size:20px;
-  font-weight:900;
-  letter-spacing:.05em;
-}
-.header-btn{
-  background:linear-gradient(180deg,#10D86A,#06C755);
-  color:#fff;
-  padding:10px 18px;
-  border-radius:30px;
-  font-weight:900;
-  font-size:14px;
-  box-shadow:0 10px 25px rgba(6,199,85,.4);
-}
+    /* ===== Top header like “元” ===== */
+    .topbar{
+      background:#fff;
+      color:#0b1220;
+      padding:16px 0 10px;
+      position:relative;
+      z-index:10;
+    }
+    .brand{
+      text-align:center;
+      font-weight:900;
+      font-size:26px;
+      letter-spacing:.02em;
+      margin:0;
+      line-height:1.2;
+    }
+    .brand small{
+      display:block;
+      margin-top:6px;
+      font-size:12px;
+      font-weight:800;
+      opacity:.75;
+    }
+    .top-cta-wrap{
+      display:flex;
+      justify-content:center;
+      padding:12px 18px 2px;
+    }
+    .btn-yellow{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:min(720px,100%);
+      padding:16px 18px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:16px;
+      letter-spacing:.02em;
+      background:linear-gradient(180deg,var(--yellow2),var(--yellow));
+      color:#1b1b1b;
+      box-shadow:var(--shadowSoft);
+      border:1px solid rgba(0,0,0,.10);
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .btn-yellow:hover{ transform:translateY(-1px); box-shadow:0 20px 46px rgba(0,0,0,.44); }
 
-/* ===============================
-   HERO
-================================ */
-.hero{
-  position:relative;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  background:url("hero.jpg") center/cover no-repeat;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.62);
-}
-.hero .container{
-  position:relative;
-  z-index:2;
-  max-width:900px;
-}
-.hero-sub{
-  display:inline-block;
-  background:rgba(0,0,0,.5);
-  border:1px solid rgba(255,255,255,.25);
-  padding:8px 16px;
-  border-radius:30px;
-  font-weight:700;
-  font-size:14px;
-  margin-bottom:16px;
-}
-.hero h1{
-  font-size:46px;
-  font-weight:900;
-  line-height:1.2;
-  margin:0 0 16px;
-}
-.hero-text{
-  font-size:18px;
-  margin-bottom:28px;
-  color:rgba(255,255,255,.9);
-}
-.hero-btn{
-  display:inline-block;
-  background:linear-gradient(180deg,var(--yellow2),var(--yellow));
-  color:#1b1b1b;
-  padding:18px 28px;
-  border-radius:40px;
-  font-weight:900;
-  font-size:18px;
-  box-shadow:0 18px 40px rgba(0,0,0,.45);
-}
-.hero-btn span{
-  display:block;
-  font-size:13px;
-  margin-bottom:4px;
-}
+    /* ===== Hero (元の黒×写真×黄色) ===== */
+    .hero{
+      position:relative;
+      background:url("hero.jpg") center/cover no-repeat;
+      min-height: calc(100vh - 120px);
+      display:flex;
+      align-items:stretch;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(10,18,35,.64);
+    }
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      width:100%;
+      padding:42px 0 44px;
+      display:flex;
+      align-items:center;
+    }
+    .hero-card{
+      width:100%;
+      text-align:center;
+    }
+    .pill{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:999px;
+      background:rgba(0,0,0,.38);
+      border:1px solid rgba(255,255,255,.18);
+      font-weight:800;
+      font-size:14px;
+      margin-bottom:18px;
+    }
+    .hero h1{
+      margin:0 0 14px;
+      font-size:44px;
+      font-weight:900;
+      line-height:1.18;
+      letter-spacing:.01em;
+      text-shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+    .hero p{
+      margin:0 auto 26px;
+      max-width:740px;
+      color:var(--muted);
+      font-weight:700;
+      font-size:16px;
+    }
+    .btn-hero{
+      display:inline-block;
+      width:min(720px,100%);
+      padding:20px 20px;
+      border-radius:999px;
+      background:linear-gradient(180deg,var(--yellow2),var(--yellow));
+      color:#1b1b1b;
+      font-weight:900;
+      font-size:18px;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(0,0,0,.12);
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .btn-hero span{
+      display:block;
+      font-size:12px;
+      font-weight:900;
+      opacity:.8;
+      margin-bottom:6px;
+    }
+    .btn-hero:hover{ transform:translateY(-1px); box-shadow:0 22px 52px rgba(0,0,0,.48); }
 
-/* ===============================
-   PAIN
-================================ */
-.pain{
-  background:#fff;
-  color:#000;
-  padding:80px 0;
-}
-.section-title{
-  font-size:32px;
-  font-weight:900;
-  margin-bottom:24px;
-  text-align:center;
-}
-.check-list{
-  max-width:800px;
-  margin:0 auto;
-  list-style:none;
-  padding:0;
-}
-.check-list li{
-  background:#f7f7f7;
-  margin-bottom:12px;
-  padding:16px 18px;
-  border-radius:14px;
-  font-weight:700;
-}
-.solve{
-  text-align:center;
-  margin-top:30px;
-  font-size:24px;
-  font-weight:900;
-}
-.solve span{
-  background:linear-gradient(transparent 60%,var(--yellow) 60%);
-  padding:0 6px;
-}
+    /* ===== Sections (下は白で読みやすく、でも“安っぽくしない”) ===== */
+    .section{
+      background:#fff;
+      color:var(--cardText);
+      padding:58px 0;
+    }
+    .section.alt{
+      background:#f4f6fb;
+    }
+    .title{
+      text-align:center;
+      font-size:26px;
+      font-weight:900;
+      margin:0 0 18px;
+      letter-spacing:.02em;
+    }
+    .lead{
+      text-align:center;
+      margin:0 auto 26px;
+      max-width:820px;
+      color:rgba(11,18,32,.78);
+      font-weight:700;
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      margin-top:18px;
+    }
+    .card{
+      background:#fff;
+      border-radius:var(--radius);
+      padding:18px 16px;
+      border:1px solid rgba(15,30,58,.10);
+      box-shadow:0 12px 28px rgba(15,30,58,.10);
+    }
+    .num{
+      display:inline-grid;
+      place-items:center;
+      width:52px;height:52px;
+      border-radius:18px;
+      background:rgba(255,196,0,.20);
+      border:1px solid rgba(255,196,0,.38);
+      font-weight:900;
+      color:#0b1220;
+      margin-bottom:10px;
+    }
+    .card h3{
+      margin:0 0 8px;
+      font-size:16px;
+      font-weight:900;
+    }
+    .card p{
+      margin:0;
+      color:rgba(11,18,32,.76);
+      font-weight:700;
+      font-size:14px;
+      line-height:1.8;
+    }
 
-/* ===============================
-   FEATURES
-================================ */
-.features{
-  background:#0F1E3A;
-  padding:80px 0;
-}
-.feature-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-.feature{
-  background:#fff;
-  color:#000;
-  padding:28px;
-  border-radius:20px;
-}
-.feature-num{
-  font-size:28px;
-  font-weight:900;
-  color:#FFC400;
-}
-.feature h3{
-  font-size:20px;
-  margin:10px 0;
-}
-.feature p{
-  font-size:15px;
-}
+    .list{
+      list-style:none;
+      padding:0;
+      margin:18px auto 0;
+      max-width:900px;
+      display:grid;
+      gap:10px;
+    }
+    .list li{
+      background:#fff;
+      border:1px solid rgba(15,30,58,.10);
+      border-radius:16px;
+      padding:14px 14px;
+      box-shadow:0 10px 22px rgba(15,30,58,.08);
+      font-weight:800;
+      color:rgba(11,18,32,.84);
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .list li::before{
+      content:"✓";
+      width:24px;height:24px;
+      border-radius:10px;
+      display:grid;
+      place-items:center;
+      background:rgba(6,199,85,.14);
+      border:1px solid rgba(6,199,85,.26);
+      color:rgba(6,199,85,.95);
+      font-weight:900;
+      margin-top:1px;
+      flex:0 0 auto;
+    }
 
-/* ===============================
-   SIMULATION
-================================ */
-.simulation{
-  background:#000;
-  padding:90px 0;
-}
-.sim-box{
-  max-width:600px;
-  margin:30px auto 0;
-  border:1px solid rgba(255,255,255,.25);
-  border-radius:24px;
-  padding:30px;
-}
-.sim-price{
-  font-size:42px;
-  font-weight:900;
-  color:var(--yellow);
-  margin:10px 0;
-}
+    /* ===== Earnings box ===== */
+    .earn{
+      background:#0b1220;
+      color:#fff;
+      padding:60px 0;
+    }
+    .earn .title{ color:#fff; }
+    .earn .lead{ color:rgba(255,255,255,.85); }
+    .earnbox{
+      max-width:720px;
+      margin:18px auto 0;
+      border-radius:var(--radius2);
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.06);
+      box-shadow:0 18px 38px rgba(0,0,0,.26);
+      padding:18px 16px;
+      text-align:center;
+    }
+    .earnbox .big{
+      font-size:34px;
+      font-weight:900;
+      color:var(--yellow);
+      margin:10px 0 6px;
+    }
+    .earnbox .note{
+      font-size:12px;
+      color:rgba(255,255,255,.80);
+      font-weight:700;
+      line-height:1.7;
+    }
 
-/* ===============================
-   CTA
-================================ */
-.cta{
-  background:#fff;
-  color:#000;
-  padding:90px 0;
-  text-align:center;
-}
-.cta-btn{
-  display:inline-block;
-  margin-top:24px;
-  background:linear-gradient(180deg,#10D86A,#06C755);
-  color:#fff;
-  padding:20px 36px;
-  border-radius:40px;
-  font-size:20px;
-  font-weight:900;
-  box-shadow:0 18px 40px rgba(6,199,85,.45);
-}
+    /* ===== CTA (LINE) ===== */
+    .cta{
+      background:#fff;
+      color:#0b1220;
+      padding:64px 0;
+      text-align:center;
+    }
+    .cta h2{
+      margin:0 0 10px;
+      font-size:26px;
+      font-weight:900;
+    }
+    .cta p{
+      margin:0 auto 18px;
+      max-width:780px;
+      color:rgba(11,18,32,.76);
+      font-weight:700;
+    }
+    .btn-line{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:min(720px,100%);
+      padding:18px 20px;
+      border-radius:999px;
+      background:linear-gradient(180deg,var(--line1),var(--line2));
+      color:#fff;
+      font-weight:900;
+      font-size:18px;
+      box-shadow:0 18px 42px rgba(6,199,85,.30);
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .btn-line:hover{ transform:translateY(-1px); box-shadow:0 22px 48px rgba(6,199,85,.34); }
+    .mini{
+      margin-top:10px;
+      font-size:12px;
+      color:rgba(11,18,32,.70);
+      font-weight:700;
+    }
 
-/* ===============================
-   FOOTER
-================================ */
-footer{
-  background:#000;
-  padding:24px 0;
-  text-align:center;
-  font-size:12px;
-  color:rgba(255,255,255,.6);
-}
+    /* ===== Footer + company info ===== */
+    footer{
+      background:#0b1220;
+      color:rgba(255,255,255,.72);
+      padding:22px 0;
+      font-size:12px;
+    }
+    .footgrid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:8px;
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px;
+    }
+    .footgrid strong{ color:#fff; }
+    .muted{ color:rgba(255,255,255,.72); }
 
-/* ===============================
-   RESPONSIVE
-================================ */
-@media(max-width:768px){
-  .hero h1{font-size:34px;}
-  .feature-grid{grid-template-columns:1fr;}
-}
-</style>
+    /* ===== Sticky bottom LINE (導線強化) ===== */
+    .sticky{
+      position:fixed;
+      left:0; right:0; bottom:0;
+      z-index:120;
+      padding:10px 12px 14px;
+      background:linear-gradient(180deg, rgba(11,18,32,0), rgba(11,18,32,.75) 35%, rgba(11,18,32,.90) 100%);
+      pointer-events:none;
+    }
+    .sticky .inner{
+      pointer-events:auto;
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      gap:10px;
+    }
+    .sticky a{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:14px 12px;
+      border-radius:999px;
+      font-weight:900;
+      box-shadow:0 16px 34px rgba(0,0,0,.35);
+      border:1px solid rgba(0,0,0,.12);
+    }
+    .sticky .job{ background:linear-gradient(180deg,var(--yellow2),var(--yellow)); color:#1b1b1b; }
+    .sticky .line{ background:linear-gradient(180deg,var(--line1),var(--line2)); color:#fff; border:0; }
+    .sticky span{
+      font-size:13px;
+      opacity:.92;
+      font-weight:900;
+    }
+    .space-bottom{ height:86px; } /* sticky分 */
+
+    /* ===== Responsive ===== */
+    @media (max-width:860px){
+      .grid-3{ grid-template-columns:1fr; }
+      .hero h1{ font-size:36px; }
+    }
+    @media (max-width:520px){
+      .brand{ font-size:22px; }
+      .hero{ min-height: calc(100vh - 120px); }
+      .hero h1{ font-size:32px; }
+      .pill{ font-size:13px; }
+      .btn-hero{ font-size:17px; padding:18px 16px; }
+      .btn-yellow{ font-size:15px; padding:14px 14px; }
+      .title{ font-size:22px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container header-inner">
-    <div class="logo">SKG（Sample）</div>
-    <a href="#cta" class="header-btn">LINEで問い合わせる</a>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <div class="hero-sub">未経験OK・加盟金0円・車両リースあり</div>
-    <h1>会社に縛られず、<br>自分の力で稼ぐ。</h1>
-    <p class="hero-text">
-      普通免許1枚で、月収60万円〜を目指せる<br>
-      プロドライバー募集
-    </p>
-    <a href="#cta" class="hero-btn">
-      <span>最短3日で稼働開始！</span>
-      今すぐ案件情報を見る（無料）
-    </a>
-  </div>
-</section>
-
-<section class="pain">
-  <div class="container">
-    <h2 class="section-title">こんなお悩みありませんか？</h2>
-    <ul class="check-list">
-      <li>どれだけ頑張っても給料が上がらない</li>
-      <li>人間関係に疲れた</li>
-      <li>短期間で資金を貯めたい</li>
-      <li>自由な働き方をしたい</li>
-    </ul>
-    <div class="solve">
-      その悩み、<br><span>軽貨物ドライバーで解決</span>
+  <!-- top header (元の感じ) -->
+  <div class="topbar">
+    <div class="container">
+      <p class="brand">
+        井上運送
+        <small>OFAフランチャイズ加盟店｜軽貨物ドライバー求人／配送／引越し</small>
+      </p>
+    </div>
+    <div class="top-cta-wrap">
+      <a class="btn-yellow" href="#cta">LINEで問い合わせる</a>
     </div>
   </div>
-</section>
 
-<section class="features">
-  <div class="container">
-    <h2 class="section-title" style="color:#fff;">選ばれる3つの理由</h2>
-    <div class="feature-grid">
-      <div class="feature">
-        <div class="feature-num">01</div>
-        <h3>圧倒的案件数</h3>
-        <p>大手EC・物流会社と提携。仕事が途切れません。</p>
-      </div>
-      <div class="feature">
-        <div class="feature-num">02</div>
-        <h3>車両リース完備</h3>
-        <p>車がなくても即スタート可能。</p>
-      </div>
-      <div class="feature">
-        <div class="feature-num">03</div>
-        <h3>安心サポート</h3>
-        <p>未経験でも稼げるまで徹底フォロー。</p>
+  <!-- HERO (元の黒×写真×黄色) -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-card">
+        <div class="pill">鹿児島県内対応・未経験OK・相談だけOK</div>
+        <h1>会社に縛られず、<br>自分の力で稼ぐ。</h1>
+        <p>
+          井上運送は <b>OFAフランチャイズ加盟店</b> として、案件供給と現場フォローを両立。<br>
+          初めての方も経験者も、働き方に合わせて案件を提案します。
+        </p>
+        <a class="btn-hero" href="#cta">
+          <span>最短3日で稼働開始！</span>
+          今すぐ案件情報を見る（無料）
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="simulation">
-  <div class="container text-center">
-    <h2 class="section-title" style="color:#fff;">どれくらい稼げる？</h2>
-    <div class="sim-box">
-      <p>週6日稼働（宅配メイン）</p>
-      <div class="sim-price">月収 650,000円</div>
-      <p style="font-size:13px;">※単価180円 × 140個 × 26日</p>
+  <!-- 悩み -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title">こんなお悩みありませんか？</h2>
+      <p class="lead">
+        軽貨物は「自由」だけじゃなく、<b>ちゃんと稼ぐ仕組み</b>が重要です。井上運送はOFA本部連携で安定した案件をご案内します。
+      </p>
+      <ul class="list">
+        <li>未経験で始めたいけど、最初の現場が不安</li>
+        <li>働き方（週◯日・時間帯・エリア）を相談しながら決めたい</li>
+        <li>単価が低すぎる現場は避けたい</li>
+        <li>将来的に独立（フランチャイズ）も視野に入れたい</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 選ばれる理由 -->
+  <section class="section alt">
+    <div class="container">
+      <h2 class="title">井上運送が選ばれる理由</h2>
+      <p class="lead">“案件供給”と“現場フォロー”をセットで。OFA本部連携だから、紹介して終わりになりません。</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="num">01</div>
+          <h3>OFA本部連携で案件が安定</h3>
+          <p>宅配・ルート・スポットなど、状況に合わせて案件提案。繁忙期・閑散期の波も見据えて案内します。</p>
+        </div>
+        <div class="card">
+          <div class="num">02</div>
+          <h3>未経験でも安心の立ち上げ</h3>
+          <p>稼働までの段取り、現場のコツ、注意点をフォロー。最初につまずかない“入り口”を作ります。</p>
+        </div>
+        <div class="card">
+          <div class="num">03</div>
+          <h3>求人だけでなく依頼も対応</h3>
+          <p>単身／小規模引越し、企業・個人様からの配送依頼まで受付。地域の仕事を増やす動きも強化します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 仕事内容 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title">対応内容（求人・依頼）</h2>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>✅ 軽貨物ドライバー求人</h3>
+          <p>宅配／ルート／スポットなど。<b>鹿児島県内</b>で希望に合わせて提案します。</p>
+        </div>
+        <div class="card">
+          <h3>✅ OFAフランチャイズの案内</h3>
+          <p>将来独立したい方向け。加盟後すぐ稼働しやすいよう、案件と運用を整えます。</p>
+        </div>
+        <div class="card">
+          <h3>✅ 引越し対応</h3>
+          <p><b>単身引越し／小規模引越し</b>のご依頼を受付。見積りはLINEでスムーズに。</p>
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>✅ 企業・個人様：配送依頼</h3>
+          <p>緊急便・定期便・スポット配送など。内容に合わせて最適な車両・体制を提案します。</p>
+        </div>
+        <div class="card">
+          <h3>✅ 対応エリア</h3>
+          <p><b>鹿児島県内</b>（エリアは相談可）。まずは希望地域をLINEで送ってください。</p>
+        </div>
+        <div class="card">
+          <h3>✅ 目安単価</h3>
+          <p><b>単価：150〜180円</b>／<b>日額：2万円</b>など（案件により変動）。条件はLINEで個別案内します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 収入モデル -->
+  <section class="earn" id="salary">
+    <div class="container">
+      <h2 class="title">どれくらい稼げる？（目安）</h2>
+      <p class="lead">案件・エリア・稼働日数で変わります。希望に合わせて現実的なモデルを提案します。</p>
+
+      <div class="earnbox">
+        <div style="font-weight:900; letter-spacing:.02em;">モデル例：宅配メイン（週6日）</div>
+        <div class="big">月収 650,000円</div>
+        <div class="note">※例：単価180円 × 140個 × 26日稼働<br>※実際の条件は案件により異なります</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2>LINEで無料相談（求人／配送／引越し）</h2>
+      <p>
+        無理な勧誘は一切ありません。<br>
+        「希望エリア」「希望の働き方」「稼ぎたい目安」を送るだけでOKです。
+      </p>
+      <a class="btn-line" href="https://lin.ee/TBt7RG4" target="_blank" rel="noopener">
+        LINEで友だち追加して相談する（無料）
+      </a>
+      <div class="mini">※24時間受付（返信は順次対応）</div>
+    </div>
+  </section>
+
+  <div class="space-bottom"></div>
+
+  <footer>
+    <div class="footgrid">
+      <div><strong>井上運送</strong>（OFAフランチャイズ加盟店）</div>
+      <div class="muted">代表：井上 利行</div>
+      <div class="muted">〒892-0871 鹿児島県鹿児島市吉野町１４８３−５</div>
+      <div class="muted">© OFA Franchise / Inoue Transport</div>
+    </div>
+  </footer>
+
+  <!-- Sticky bottom (導線：求人を見る + LINE相談) -->
+  <div class="sticky" aria-hidden="false">
+    <div class="inner">
+      <a class="job" href="#salary"><span>求人を見る</span></a>
+      <a class="line" href="https://lin.ee/TBt7RG4" target="_blank" rel="noopener"><span>LINEで相談（無料）</span></a>
     </div>
   </div>
-</section>
-
-<section class="cta" id="cta">
-  <div class="container">
-    <h2 class="section-title">まずは話を聞いてみませんか？</h2>
-    <p>無理な勧誘は一切ありません。</p>
-    <a href="https://lin.ee/TBt7RG4" class="cta-btn">
-      LINEで友だち追加して問い合わせる
-    </a>
-  </div>
-</section>
-
-<footer>
-  © 2025 総合軽貨物グループ
-</footer>
 
 </body>
 </html>
